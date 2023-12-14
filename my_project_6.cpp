@@ -1,25 +1,22 @@
 ﻿#include <iostream>
-#include <iomanip> 
 #include <windows.h>
 #include <math.h>
 using namespace std;
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-	double x, y, a, b, c;
-	cout << "Введіть значення a: ";
+	int x, y, a, b, c;
+	cout << "input a: ";
 	cin >> a;
-	cout << "Введіть значення b: ";
+	cout << "input b: ";
 	cin >> b;
-	cout << "Введіть значення c: ";
+	cout << "input c: ";
 	cin >> c;
 	x = a;
 	do {
 		y = pow(x, 1 / 3.0) + pow(x, 3) - 3;
 		cout << "x=" << x << "\t" << "y=" << y << endl;
 		x += c;
-	} while (x <= b);
+	} while (x <b);
 }
 
 
